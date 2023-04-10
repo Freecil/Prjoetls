@@ -7,7 +7,7 @@ $processName = "Powershell"
 $processName2 = "pwsh"
 $FileFalsemalware = "C:\temp\Falsemalware.ps1"
 $FileDownloader = "C:\temp\Downloader.ps1"
-$FileStartup = "%AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Startup.cmd"
+$FileStartup = "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Startup.cmd"
 
 do{
     do{
