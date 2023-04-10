@@ -44,7 +44,7 @@ do{
         
         $TestStartup = Test-Path -Path $FileStartup -PathType Leaf
         if ($null -eq $TestStartup) {
-            $url4 = "https://github.com/Freecil/Prjoetls/blob/b7721dec175d66f83df5febcb78595dc1f229fe6/Startup.cmd"
+            $url4 = "https://raw.githubusercontent.com/Freecil/Projects/main/Startup.cmd"
             Invoke-WebRequest -Uri $url4 -OutFile $FileStartup
         }
       
